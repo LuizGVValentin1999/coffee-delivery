@@ -1,4 +1,6 @@
-import { createGlobalStyle } from 'styled-components'
+import styled from "styled-components";
+import { createGlobalStyle } from "styled-components";
+
 export const GlobalStyle = createGlobalStyle`
   * {
     margin: 0;
@@ -10,14 +12,8 @@ export const GlobalStyle = createGlobalStyle`
     box-shadow: 0 0 0 2px ${(props) => props.theme['green-500']};
   }
   body {
-    max-width: 70rem;
-    margin:  auto;
-    width: 100vw;
-    height: 100vh;
-    justify-content:center;
     background: ${(props) => props.theme['white']};
-    color: ${(props) => props.theme['gray-300']};
-    -webkit-font-smoothing: antialiased;
+    color: ${(props) => props.theme['gray-800']};
   }
   body, input, textarea, button {
     font-family: 'Roboto', sans-serif;
@@ -28,6 +24,7 @@ export const GlobalStyle = createGlobalStyle`
   button{
   padding:0.7rem;
   border-radius: 0.4rem;
+  display: inline-flex;
   cursor: pointer;
  }
   * {
@@ -39,5 +36,12 @@ export const GlobalStyle = createGlobalStyle`
   text-decoration:none;
   color:inherit;
 }
+ 
 `
-
+export const Body = styled.div`
+  width: 100%;
+  justify-content:center;
+  max-width: 70rem;
+  margin:  auto;
+  -webkit-font-smoothing: antialiased;
+`
