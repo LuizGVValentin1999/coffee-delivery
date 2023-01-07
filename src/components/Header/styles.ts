@@ -3,17 +3,10 @@ import styled from "styled-components";
 export const Container = styled.div`
   display: flex;
   justify-content: center;
-  top: 0;
-  left: 0;
-  margin-left: 5rem;
-  margin-right: 5rem;
+  max-width:  70rem;
   padding: 2rem;
   justify-content: space-between;
   flex-direction: row;
-  @media (max-width: 800px) {
-    margin-left: auto;
-    margin-right: auto;
-  }
 `;
 
 export const Conjunto = styled.div``;

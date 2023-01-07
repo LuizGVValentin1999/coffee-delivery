@@ -10,6 +10,8 @@ export const GlobalStyle = createGlobalStyle`
     box-shadow: 0 0 0 2px ${(props) => props.theme['green-500']};
   }
   body {
+    max-width: 70rem;
+    margin:  auto;
     width: 100vw;
     height: 100vh;
     justify-content:center;
