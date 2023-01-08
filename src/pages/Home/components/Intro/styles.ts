@@ -33,16 +33,38 @@ export const Items = styled.div`
     max-width: 36.78rem;
     margin-top: 3rem ;
     margin-bottom: 10rem ;
-    display: flex;
-    flex-direction: row-reverse;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 17.5rem 19rem;
 
 `;
 
 
 export const Item = styled.div`
+    display: flex;
+    margin-bottom: 1rem ;
 `;
+
+
+export const ItemIcon = styled.div`
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    padding: 0.3rem;
+    margin-right: 0.6rem;
+    background: rgb(196, 127, 24);
+    color: rgb(250, 250, 250);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+`;
+
+
+export const ItemText = styled.div`
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+`;
+
 
 
 

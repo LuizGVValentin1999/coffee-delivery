@@ -1,4 +1,5 @@
-import { Background, Titulo, SubTitulo, Container, Items, Item, Img } from "./styles";
+import { Background, Titulo, SubTitulo, Container, Items, Item,ItemIcon,ItemText, Img } from "./styles";
+import { ShoppingCart,MapPin,Coffee } from 'phosphor-react'
 import coffeeImg from "./../../../../assets/coffee-img.svg";
 import { Body } from "../../../../styles/global";
 
@@ -13,10 +14,38 @@ export function Intro()  {
                         <Titulo>Encontre o café perfeito para qualquer hora do dia</Titulo>
                         <SubTitulo>Com o Coffee Delivery você recebe seu café onde estiver, a qualquer hora</SubTitulo>
                         <Items>
-                        <Item>Compra simples e segura</Item>
-                        <Item>Embalagem mantém o café intacto</Item>
-                        <Item>O café chega fresquinho até você</Item>
-                        <Item>Entrega rápida e rastreada</Item>
+                        <Item>
+                            <ItemIcon>
+                                <Coffee  weight="fill" />
+                            </ItemIcon>
+                            <ItemText>
+                                Compra simples e segura
+                            </ItemText>
+                        </Item>
+                        <Item>
+                            <ItemIcon>
+                                <Coffee  weight="fill" />
+                            </ItemIcon>
+                            <ItemText>
+                                Embalagem mantém o café intacto
+                            </ItemText>
+                        </Item>
+                        <Item>
+                            <ItemIcon>
+                                <Coffee  weight="fill" />
+                            </ItemIcon>
+                            <ItemText>
+                                Entrega rápida e rastreada
+                            </ItemText>
+                        </Item>
+                        <Item>
+                            <ItemIcon>
+                                <Coffee  weight="fill" />
+                            </ItemIcon>
+                            <ItemText>
+                                O café chega fresquinho até você
+                            </ItemText>
+                        </Item>
                         </Items>
                       
                     </div>
