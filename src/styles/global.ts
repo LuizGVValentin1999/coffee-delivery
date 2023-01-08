@@ -13,7 +13,7 @@ export const GlobalStyle = createGlobalStyle`
   }
   body {
     background: ${(props) => props.theme['white']};
-    color: ${(props) => props.theme['gray-800']};
+    color: ${(props) => props.theme['gray-600']};
   }
   body, input, textarea, button {
     font-family: 'Roboto', sans-serif;

@@ -32,7 +32,7 @@ export const SubTitulo = styled.div`
 export const Items = styled.div`
     max-width: 36.78rem;
     margin-top: 3rem ;
-    margin-bottom: 10rem ;
+    margin-bottom: 7rem ;
     display: grid;
     grid-template-columns: 17.5rem 19rem;
 
@@ -45,17 +45,30 @@ export const Item = styled.div`
 `;
 
 
-export const ItemIcon = styled.div`
+const COLOR_ICON = {
+    yellowDark: 'yellow-800',
+    yellow: 'yellow-500',
+    gray: 'gray-600',
+    red: 'red-500',
+    blue: 'blue-500',
+} as const
+  
+interface IconProps {
+    iconColor: keyof typeof COLOR_ICON
+}
+
+  
+export const ItemIcon = styled.span<IconProps>`
     border-radius: 50%;
     width: 2rem;
     height: 2rem;
     padding: 0.3rem;
     margin-right: 0.6rem;
-    background: rgb(196, 127, 24);
     color: rgb(250, 250, 250);
     display: flex;
     align-items: center;
     justify-content: center;
+    background: ${(props) => props.theme[COLOR_ICON[props.iconColor]]};
 `;
 
 

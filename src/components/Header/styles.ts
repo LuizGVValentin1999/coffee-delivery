@@ -26,6 +26,6 @@ export const Local = styled.button`
 `;
 
 export const Carrinho = styled.button`
-  color: ${(props) => props.theme['orange-700']};
-  background: ${(props) =>props.theme['orange-200']};
+  color: ${(props) => props.theme['yellow-800']};
+  background: ${(props) =>props.theme['yellow-200']};
 `;
