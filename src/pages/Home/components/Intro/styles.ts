@@ -3,6 +3,7 @@ import backgroud from "./../../../../assets/Background-intro.png";
 
 export const Background = styled.div`
 background-image: url(${backgroud});
+background-size: 100%;
 `
 export const Container = styled.div`
     display: flex;
