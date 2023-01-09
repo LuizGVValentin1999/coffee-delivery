@@ -65,6 +65,10 @@ export const Counter = styled.div`
 export const CouterButton = styled.button`
    color: ${(props) =>props.theme['blue-500']};
    background:  ${(props) =>props.theme['gray-100']};
+   :focus{
+    outline: none;
+    box-shadow: 0 0 0;
+   }
 `;
 
 
