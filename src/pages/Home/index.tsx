@@ -1,22 +1,20 @@
 import { CoffeeList } from "./components/CoffeeList";
 import { Intro } from "./components/Intro";
 
-
-
-import latte from "../assets/coffees/latte.png";
-import arabe from "../assets/coffees/arabe.png";
-import cubano from "../assets/coffees/cubano.png";
-import irlandes from "../assets/coffees/irlandes.png";
-import havaiano from "../assets/coffees/havaiano.png";
-import expresso from "../assets/coffees/americano1.png";
-import americano from "../assets/coffees/americano.png";
-import capuccino from "../assets/coffees/capuccino.png";
-import macchiato from "../assets/coffees/macchiato.png";
-import mocaccino from "../assets/coffees/mocaccino.png";
-import cafe_gelado from "../assets/coffees/gelado.png";
-import cafe_com_leite from "../assets/coffees/leite.png";
-import expresso_cremoso from "../assets/coffees/cremoso.png";
-import chocolate_quente from "../assets/coffees/chocolate.png";
+import latte from "../../assets/coffees/latte.png";
+import arabe from "../../assets/coffees/arabe.png";
+import cubano from "../../assets/coffees/cubano.png";
+import irlandes from "../../assets/coffees/irlandes.png";
+import havaiano from "../../assets/coffees/havaiano.png";
+import expresso from "../../assets/coffees/americano1.png";
+import americano from "../../assets/coffees/americano.png";
+import capuccino from "../../assets/coffees/capuccino.png";
+import macchiato from "../../assets/coffees/macchiato.png";
+import mocaccino from "../../assets/coffees/mocaccino.png";
+import cafe_gelado from "../../assets/coffees/gelado.png";
+import cafe_com_leite from "../../assets/coffees/leite.png";
+import expresso_cremoso from "../../assets/coffees/cremoso.png";
+import chocolate_quente from "../../assets/coffees/chocolate.png";
 
 const dados = [
   {
@@ -24,7 +22,7 @@ const dados = [
     title: "Expresso Tradicional",
     tags: ["Tradicional"],
     description: "O tradicional café feito com água quente e grãos moídos",
-    srcImg: expresso,
+    srcImg: "assets/coffees/expresso.png",
     price: "9,90",
     amount: 0,
   },
@@ -33,7 +31,7 @@ const dados = [
     title: "Expresso Americano",
     tags: ["Tradicional"],
     description: "Expresso diluído, menos intenso que o tradicional",
-    srcImg: americano,
+    srcImg: "assets/coffees/americano.png",
     price: "9,90",
     amount: 0,
   },
@@ -42,7 +40,7 @@ const dados = [
     title: "Expresso Cremoso",
     tags: ["Tradicional"],
     description: "Café expresso tradicional com espuma cremosa",
-    srcImg: expresso_cremoso,
+    srcImg: "assets/coffees/expresso_cremoso.png",
     price: "9,90",
     amount: 0,
   },
@@ -51,7 +49,7 @@ const dados = [
     title: "Expresso Gelado",
     tags: ["Tradicional", "Gelado"],
     description: "Bebida preparada com café expresso e cubos de gelo",
-    srcImg: cafe_gelado,
+    srcImg: "assets/coffees/cafe_gelado.png",
     price: "9,90",
     amount: 0,
   },
@@ -60,7 +58,7 @@ const dados = [
     title: "Café com Leite",
     tags: ["Tradicional", "Com Leite"],
     description: "Meio a meio de expresso tradicional com leite vaporizado",
-    srcImg: cafe_com_leite,
+    srcImg: "assets/coffees/cafe_com_leite.png",
     price: "9,90",
     amount: 0,
   },
@@ -70,7 +68,7 @@ const dados = [
     tags: ["Tradicional", "Com Leite"],
     description:
       "Uma dose de café expresso, com o dobro de leite e espuma cremosa",
-    srcImg: latte,
+    srcImg: "assets/coffees/latte.png",
     price: "9,90",
     amount: 0,
   },
@@ -80,7 +78,7 @@ const dados = [
     tags: ["Tradicional", "Com Leite"],
     description:
       "Bebida com canela feita de doses iguais de café, leite e espuma",
-    srcImg: capuccino,
+    srcImg: "assets/coffees/capuccino.png",
     price: "9,90",
     amount: 0,
   },
@@ -90,7 +88,7 @@ const dados = [
     tags: ["Tradicional", "Com Leite"],
     description:
       "Café expresso misturado com um pouco de leite quente e espuma",
-    srcImg: macchiato,
+    srcImg: "assets/coffees/macchiato.png",
     price: "9,90",
     amount: 0,
   },
@@ -99,7 +97,7 @@ const dados = [
     title: "Mocaccino",
     tags: ["Tradicional", "Com Leite"],
     description: "Café expresso com calda de chocolate, pouco leite e espuma",
-    srcImg: mocaccino,
+    srcImg: "assets/coffees/mocaccino.png",
     price: "9,90",
     amount: 0,
   },
@@ -108,7 +106,7 @@ const dados = [
     title: "Chocolate Quente",
     tags: ["Especial", "Com Leite"],
     description: "Bebida feita com chocolate dissolvido no leite quente e café",
-    srcImg: chocolate_quente,
+    srcImg: "assets/coffees/chocolate_quente.png",
     price: "9,90",
     amount: 0,
   },
@@ -118,7 +116,7 @@ const dados = [
     tags: ["Especial", "Alcoólico", "Gelado"],
     description:
       "Drink gelado de café expresso com rum, creme de leite e hortelã",
-    srcImg: cubano,
+    srcImg: "assets/coffees/cubano.png",
     price: "9,90",
     amount: 0,
   },
@@ -127,7 +125,7 @@ const dados = [
     title: "Havaiano",
     tags: ["Especial"],
     description: "Bebida adocicada preparada com café e leite de coco",
-    srcImg: havaiano,
+    srcImg: "assets/coffees/havaiano.png",
     price: "9,90",
     amount: 0,
   },
@@ -136,7 +134,7 @@ const dados = [
     title: "Árabe",
     tags: ["Especial"],
     description: "Bebida preparada com grãos de café árabe e especiarias",
-    srcImg: arabe,
+    srcImg: "assets/coffees/arabe.png",
     price: "9,90",
     amount: 0,
   },
@@ -145,7 +143,7 @@ const dados = [
     title: "Irlandês",
     tags: ["Especial", "Alcoólico"],
     description: "Bebida a base de café, uísque irlandês, açúcar e chantilly",
-    srcImg: irlandes,
+    srcImg: "assets/coffees/irlandes.png",
     price: "9,90",
     amount: 0,
   },
@@ -155,7 +153,7 @@ const dados = [
     tags: ["Especial", "Vegano"],
     description:
       "Uma dose de café expresso com  leite de soja e espuma cremosa",
-    srcImg: latte,
+    srcImg: "assets/coffees/latte.png",
     price: "9,90",
     amount: 0,
   },
@@ -164,18 +162,17 @@ const dados = [
     title: "Americano Gelado",
     tags: ["Tradicional", "Gelado"],
     description: "Bebida preparada com café expresso americano e cubos de gelo",
-    srcImg: americano,
+    srcImg: "assets/coffees/americano.png",
     price: "9,90",
     amount: 0,
   },
 ];
 
-export function Home()  {
-
+export function Home() {
   return (
     <div className="Home">
-        <Intro/>
-        <CoffeeList/>
+      <Intro />
+      <CoffeeList />
     </div>
-  )
+  );
 }

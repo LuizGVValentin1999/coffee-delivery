@@ -1,9 +1,9 @@
 import { Container, Logo, Local, Carrinho, Conjunto, Entrega } from "./styles";
-import { ShoppingCart,MapPin } from 'phosphor-react'
-import logo from "./../../assets/logo.svg";
+import { ShoppingCart, MapPin } from "phosphor-react";
+import logo from "./../../assets/Logo.svg";
 import { Link } from "react-router-dom";
 import { Body } from "../../styles/global";
-export  function Header() {
+export function Header() {
   return (
     <Body>
       <Container>
@@ -19,12 +19,11 @@ export  function Header() {
 
           <Carrinho>
             <Link to="/entregaPedido">
-              <ShoppingCart size={20}  weight="fill"/>
+              <ShoppingCart size={20} weight="fill" />
             </Link>
           </Carrinho>
         </Conjunto>
       </Container>
     </Body>
-   
   );
 }
