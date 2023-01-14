@@ -4,10 +4,9 @@ import styled from "styled-components";
 export const Container = styled.div`
     border-radius: 8px 50px 8px 50px;
     background:  ${(props) =>props.theme['white-200']};
-    width: 16rem;
     height: 19.375rem;
     text-align: center;
-    margin: 1.4rem;
+    margin:  3rem 0 0.5rem 0;
 `;
 
 export const Tags = styled.div`

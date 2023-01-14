@@ -2,25 +2,26 @@ import {  Titulo, Description, Container, CoffeeImg, Tags, SpanTags, Buy, Counte
 import { ShoppingCart,Plus,Minus  } from 'phosphor-react'
 import coffee from "./../../../../assets/coffees/americano.png";
 
-export function CoffeeItem()  {
+export function CoffeeItem({key = '',img = '',tags,valor = '',cardTitulo = '',description = ''})  {
 
     return (
-       <Container>
-        <CoffeeImg src={coffee} />
+       <Container key={key}>
+        <CoffeeImg src={img} />
         <Tags>
-            <SpanTags>Tradicional</SpanTags>
-            <SpanTags>Com leite</SpanTags>
+            {tags?.map((tag) => (
+            <SpanTags key={tag} >{tag}</SpanTags>
+            ))}
         </Tags>
-        <Titulo>Café com Leite</Titulo>
-        <Description>Meio a meio de expresso tradicional com leite vaporizado</Description>
+        <Titulo>{cardTitulo}</Titulo>
+        <Description>{description}</Description>
         <Buy>
-            <ValueBox><Coin>R$</Coin><Value>9,90</Value></ValueBox>
+            <ValueBox><Coin>R$</Coin><Value>{valor}</Value></ValueBox>
             <Counter>
                 <CouterButton>
                     <Minus  size={14} weight="fill" />
                 </CouterButton>
                 <div>
-                    <span>1</span>
+                    <span>0</span>
                 </div>
                 <CouterButton>
                     <Plus  size={14} weight="fill" />
