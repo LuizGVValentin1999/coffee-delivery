@@ -16,12 +16,11 @@ export function Header() {
             <MapPin size={20} weight="fill" />
             <Entrega>Campo Largo, PR</Entrega>
           </Local>
-
-          <Carrinho>
-            <Link to="/entregaPedido">
+          <Link to="/Checkout">
+            <Carrinho>
               <ShoppingCart size={20} weight="fill" />
-            </Link>
-          </Carrinho>
+            </Carrinho>
+          </Link>
         </Conjunto>
       </Container>
     </Body>
