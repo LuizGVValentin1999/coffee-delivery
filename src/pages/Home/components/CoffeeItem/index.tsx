@@ -1,8 +1,22 @@
 import {  Titulo, Description, Container, CoffeeImg, Tags, SpanTags, Buy, Counter, BuyButton, ValueBox, Coin, Value,CouterButton } from "./styles";
 import { ShoppingCart,Plus,Minus  } from 'phosphor-react'
+import { useState } from "react";
 import coffee from "./../../../../assets/coffees/americano.png";
 
 export function CoffeeItem({key = '',img = '',tags,valor = '',cardTitulo = '',description = ''})  {
+    const [quantity, setQuantity] = useState(1);
+
+    
+    function handleAdd() {
+        setQuantity(state => state + 1);
+    }
+
+    function handleMinus() {
+        if(quantity>1){
+            setQuantity(state => state - 1);
+        }
+    }
+
 
     return (
        <Container key={key}>
@@ -17,13 +31,13 @@ export function CoffeeItem({key = '',img = '',tags,valor = '',cardTitulo = '',de
         <Buy>
             <ValueBox><Coin>R$</Coin><Value>{valor}</Value></ValueBox>
             <Counter>
-                <CouterButton>
+                <CouterButton onClick={handleMinus}>
                     <Minus  size={14} weight="fill" />
                 </CouterButton>
                 <div>
-                    <span>0</span>
+                    <span>{quantity}</span>
                 </div>
-                <CouterButton>
+                <CouterButton onClick={handleAdd}>
                     <Plus  size={14} weight="fill" />
                 </CouterButton>
             </Counter>
