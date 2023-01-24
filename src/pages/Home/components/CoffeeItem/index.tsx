@@ -1,7 +1,6 @@
 import {  Titulo, Description, Container, CoffeeImg, Tags, SpanTags, Buy, Counter, BuyButton, ValueBox, Coin, Value,CouterButton } from "./styles";
 import { ShoppingCart,Plus,Minus  } from 'phosphor-react'
 import { useState } from "react";
-import coffee from "./../../../../assets/coffees/americano.png";
 
 export function CoffeeItem({key = '',img = '',tags,valor = '',cardTitulo = '',description = ''})  {
     const [quantity, setQuantity] = useState(1);
