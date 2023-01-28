@@ -1,6 +1,27 @@
 import { CurrencyDollar, MapPinLine } from "phosphor-react";
 import { Body } from "../../styles/global";
-import {  Checkoutbox, DivContainer, Titulo, IconBox, TextIcon, TituloIcon , SubTituloIcon, InputStyleContainer, InputStyled, CepInput, RuaInput, ComplementoInput, FormContainer,ButtonConfirm, PaySpace, PayDiv } from "./styles";
+import {  Checkoutbox, 
+          DivContainer, 
+          Titulo, 
+          IconBox,
+          TextIcon, 
+          TituloIcon , 
+          SubTituloIcon, 
+          InputStyleContainer, 
+          InputStyled, 
+          CepInput, 
+          RuaInput, 
+          ComplementoInput, 
+          FormContainer,
+          ButtonConfirm, 
+          PaySpace, 
+          PayDiv,
+          CoffeSelectBox,
+          CoffeeImg,
+          CoffeBody,
+          CoffeHead,
+          Coffebox
+         } from "./styles";
 
 
 
@@ -77,7 +98,19 @@ export function Checkout() {
         <div>
           <Titulo>Café selecionados</Titulo>
           <DivContainer>
-            <div>tradicional</div>
+            <CoffeSelectBox>
+            <CoffeeImg src='/src/assets/coffees/expresso.png' />
+            <CoffeBody>
+              <CoffeHead>
+                <div>tradicional</div>
+                <div>9,50</div>
+              </CoffeHead>
+              <Coffebox>
+                <>- 0 +</>
+                <>Remover</>
+              </Coffebox>
+            </CoffeBody>
+            </CoffeSelectBox> 
             <PaySpace>
               <PayDiv>
                 <div>Total de itens</div>
