@@ -125,6 +125,8 @@ export const PayDiv = styled.div `
 export const CoffeSelectBox = styled.div `
     display: flex;
     justify-content: space-between;
+    border-bottom: solid 1px gray;
+    margin-bottom: 2rem;
     .total{
         font-weight: 800;
         font-size: 1.2rem;
@@ -132,13 +134,15 @@ export const CoffeSelectBox = styled.div `
 `
 
 export const CoffeeImg = styled.img`
-    margin-top: calc(-5px - 1rem);
     width: 5rem;
     margin-bottom: 1rem;
     margin-right: 2rem;
 `;
 
 export const CoffeBody = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 `
 
 export const CoffeHead = styled.div`
@@ -151,4 +155,8 @@ export const Coffebox = styled.div`
     display: flex;
     width: 15rem;
     justify-content: space-between;
+`
+
+export const CoffePrice= styled.div`
+    font-weight: 800;
 `

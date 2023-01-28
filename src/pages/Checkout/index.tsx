@@ -20,7 +20,8 @@ import {  Checkoutbox,
           CoffeeImg,
           CoffeBody,
           CoffeHead,
-          Coffebox
+          Coffebox,
+          CoffePrice
          } from "./styles";
 
 
@@ -102,8 +103,8 @@ export function Checkout() {
             <CoffeeImg src='/src/assets/coffees/expresso.png' />
             <CoffeBody>
               <CoffeHead>
-                <div>tradicional</div>
-                <div>9,50</div>
+                <div>Tradicional</div>
+                <CoffePrice>R$ 9,50</CoffePrice>
               </CoffeHead>
               <Coffebox>
                 <>- 0 +</>
