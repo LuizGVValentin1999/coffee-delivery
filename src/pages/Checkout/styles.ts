@@ -121,7 +121,6 @@ export const PayDiv = styled.div `
         font-size: 1.2rem;
     }
     `
-
 export const CoffeSelectBox = styled.div `
     display: flex;
     justify-content: space-between;
@@ -132,7 +131,6 @@ export const CoffeSelectBox = styled.div `
         font-size: 1.2rem;
     }
 `
-
 export const CoffeeImg = styled.img`
     width: 5rem;
     margin-bottom: 1rem;
