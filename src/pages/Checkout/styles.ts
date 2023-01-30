@@ -16,6 +16,18 @@ export const DivContainer  = styled.div`
     border-radius: 15px;
 `;
 
+export const DivContainerSelect  = styled.div`
+    background:  ${(props) =>props.theme['white-200']};
+    padding: 3rem;
+    margin-bottom: 1rem;
+    border-radius: 15px;
+    width: 28rem;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 50px;
+`;
+
 export const Titulo = styled.div`
     font-size: 1.3rem;
     font-family: 'Baloo 2', sans-serif;
@@ -152,9 +164,36 @@ export const CoffeHead = styled.div`
 export const Coffebox = styled.div`
     display: flex;
     width: 15rem;
-    justify-content: space-between;
 `
 
 export const CoffePrice= styled.div`
     font-weight: 800;
 `
+
+export const Counter = styled.div`
+    display: flex;
+    height: 3rem;
+    background:  ${(props) =>props.theme['gray-100']};
+    border-radius: 8px;
+    margin: 0 0.5rem 0 0;
+    align-items: center;
+    justify-content: space-around;
+`;
+
+export const CouterButton = styled.button`
+   color: ${(props) =>props.theme['blue-500']};
+   background:  ${(props) =>props.theme['gray-100']};
+   :focus{
+    outline: none;
+    box-shadow: 0 0 0;
+   }
+`;
+
+
+
+export const RemoverButton = styled.button`
+    display: flex;
+    align-items: center;
+    background:  ${(props) =>props.theme['gray-100']};
+    color:  ${(props) =>props.theme['gray-500']};
+`;

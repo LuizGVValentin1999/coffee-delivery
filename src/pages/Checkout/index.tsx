@@ -1,7 +1,9 @@
-import { CurrencyDollar, MapPinLine } from "phosphor-react";
+import { CurrencyDollar, MapPinLine, Minus, Plus, Trash } from "phosphor-react";
+import { useState } from "react";
 import { Body } from "../../styles/global";
 import {  Checkoutbox, 
           DivContainer, 
+          DivContainerSelect, 
           Titulo, 
           IconBox,
           TextIcon, 
@@ -21,12 +23,31 @@ import {  Checkoutbox,
           CoffeBody,
           CoffeHead,
           Coffebox,
-          CoffePrice
+          CoffePrice,
+          Counter,
+          CouterButton,
+          RemoverButton
          } from "./styles";
+import React from "react";
 
 
 
 export function Checkout() {
+
+  const [quantity, setQuantity] = useState(1);
+
+    
+  function handleAdd() {
+      setQuantity(state => state + 1);
+  }
+
+  function handleMinus() {
+      if(quantity>1){
+          setQuantity(state => state - 1);
+      }
+  }
+
+
   return (
     <Body>
       <Checkoutbox>
@@ -98,7 +119,7 @@ export function Checkout() {
         </div>
         <div>
           <Titulo>Café selecionados</Titulo>
-          <DivContainer>
+          <DivContainerSelect>
             <CoffeSelectBox>
             <CoffeeImg src='/src/assets/coffees/expresso.png' />
             <CoffeBody>
@@ -107,8 +128,21 @@ export function Checkout() {
                 <CoffePrice>R$ 9,50</CoffePrice>
               </CoffeHead>
               <Coffebox>
-                <>- 0 +</>
-                <>Remover</>
+              <Counter>
+                <CouterButton onClick={handleMinus}>
+                    <Minus  size={14} weight="fill" />
+                </CouterButton>
+                <div>
+                    <span>{quantity}</span>
+                </div>
+                <CouterButton onClick={handleAdd}>
+                    <Plus  size={14} weight="fill" />
+                </CouterButton>
+            </Counter>
+            <RemoverButton>
+              <Trash size={24} color="#5839f5" />
+               <div>Remover</div>
+            </RemoverButton>
               </Coffebox>
             </CoffeBody>
             </CoffeSelectBox> 
@@ -127,7 +161,7 @@ export function Checkout() {
               </PayDiv>
             </PaySpace>
             <ButtonConfirm>confirmar pedido</ButtonConfirm>
-          </DivContainer>
+          </DivContainerSelect>
         </div>
       </Checkoutbox>
     </Body>
